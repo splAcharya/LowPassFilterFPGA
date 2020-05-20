@@ -1,0 +1,69 @@
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2018.1 (64-bit)
+# SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Current time: Tue Apr 23 22:35:08 CDT 2019
+# Process ID: 8924
+# User: ea4963aw
+# OS: Windows 7
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+Tue Apr 23 22:35:08 CDT 2019
+ui.utils.e: Error: Wrapper with null DB pointer
+	at ui.utils.d.c.GA(SourceFile:566)
+	at ui.utils.m.GA(SourceFile:2296)
+	at ui.data.common.K.<init>(SourceFile:34)
+	at ui.data.design.A.<init>(SourceFile:109)
+	at ui.project.f.mN(SourceFile:41)
+	at ui.project.a.ejN(SourceFile:502)
+	at ui.project.a.md(SourceFile:469)
+	at ui.views.S.aC.P(SourceFile:320)
+	at ui.views.S.aC.update(SourceFile:658)
+	at ui.views.S.s.gmF(SourceFile:2623)
+	at ui.bk.W(SourceFile:1865)
+	at ui.views.cj.a(SourceFile:1276)
+	at ui.views.an.a(SourceFile:592)
+	at ui.frmwork.b.c.g(SourceFile:88)
+	at ui.frmwork.b.c.b(SourceFile:55)
+	at ui.data.bq.c(SourceFile:644)
+	at ui.data.bq.a(SourceFile:151)
+	at ui.data.bq.A(SourceFile:264)
+	at ui.utils.o.x.R.clearSelection(SourceFile:122)
+	at javax.swing.tree.VariableHeightLayoutCache.rebuild(VariableHeightLayoutCache.java:758)
+	at javax.swing.tree.VariableHeightLayoutCache.treeStructureChanged(VariableHeightLayoutCache.java:644)
+	at javax.swing.plaf.basic.BasicTreeUI$Handler.treeStructureChanged(BasicTreeUI.java:3917)
+	at com.jidesoft.tree.AbstractTreeModel.fireTreeStructureChanged(Unknown Source)
+	at com.jidesoft.tree.DefaultTreeModelWrapper.treeStructureChanged(Unknown Source)
+	at com.jidesoft.tree.FilterableTreeModel.treeStructureChanged(Unknown Source)
+	at com.jidesoft.tree.AbstractTreeModel.fireTreeStructureChanged(Unknown Source)
+	at com.jidesoft.tree.DefaultTreeModelWrapper.treeStructureChanged(Unknown Source)
+	at javax.swing.tree.DefaultTreeModel.fireTreeStructureChanged(DefaultTreeModel.java:580)
+	at javax.swing.tree.DefaultTreeModel.nodeStructureChanged(DefaultTreeModel.java:365)
+	at ui.views.p.K.fso(SourceFile:152)
+	at ui.data.design.n.d(SourceFile:2300)
+	at ui.data.design.n.agp(SourceFile:2253)
+	at ui.data.design.n.b(SourceFile:67)
+	at ui.data.design.o.cU(SourceFile:175)
+	at ui.utils.u.actionPerformed(SourceFile:65)
+	at javax.swing.Timer.fireActionPerformed(Timer.java:313)
+	at ui.utils.t.fireActionPerformed(SourceFile:116)
+	at javax.swing.Timer$DoPostEvent.run(Timer.java:245)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at ui.frmwork.b.d.dispatchEvent(SourceFile:76)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+

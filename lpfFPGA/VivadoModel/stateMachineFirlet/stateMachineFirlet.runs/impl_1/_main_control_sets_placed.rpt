@@ -1,0 +1,82 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Apr 25 15:40:32 2019
+| Host         : 2UA4072285 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file _main_control_sets_placed.rpt
+| Design       : _main
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    40 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      6 |            2 |
+|      9 |            2 |
+|     10 |            2 |
+|    16+ |            9 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             138 |           41 |
+| No           | No                    | Yes                    |              20 |            7 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              61 |           13 |
+| Yes          | No                    | Yes                    |              64 |           16 |
+| Yes          | Yes                   | No                     |              21 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+-------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+
+|      Clock Signal     |                                             Enable Signal                                             |                           Set/Reset Signal                          | Slice Load Count | Bel Load Count |
++-----------------------+-------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+
+|  clk_100MHz_IBUF_BUFG | fir_instance_0/U0/i_synth/g_single_rate.i_single_rate/base_en_cntrl                                   | fir_instance_0/U0/i_synth/g_single_rate.i_single_rate/gen_data_addr |                1 |              6 |
+|  clk_100MHz_IBUF_BUFG | fir_instance_0/U0/i_synth/g_single_rate.i_single_rate/base_en_cntrl                                   | fir_instance_0/U0/i_synth/g_single_rate.i_single_rate/base_cnt      |                2 |              6 |
+|  clk_100MHz_IBUF_BUFG | fir_instance_1/U0/i_synth/g_single_rate.i_single_rate/base_en_cntrl                                   |                                                                     |                3 |              9 |
+|  clk_100MHz_IBUF_BUFG | fir_instance_1/U0/i_synth/g_single_rate.i_single_rate/base_en_cntrl                                   | fir_instance_1/U0/i_synth/g_single_rate.i_single_rate/base_cnt      |                3 |              9 |
+|  clk_100MHz_IBUF_BUFG | fir_instance_0/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/latch_op    |                                                                     |                3 |             10 |
+|  clk_100MHz_IBUF_BUFG | fir_instance_1/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/latch_op    |                                                                     |                3 |             10 |
+|  clk_100MHz_IBUF_BUFG | fir_instance_0/U0/i_synth/g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/wr_enable |                                                                     |                2 |             16 |
+|  clk_100MHz_IBUF_BUFG | fir_instance_1/U0/i_synth/g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/wr_enable |                                                                     |                2 |             16 |
+|  clk_100MHz_IBUF_BUFG | fir_instance_0/U0/i_synth/g_single_rate.i_single_rate/rfd_int                                         |                                                                     |                2 |             16 |
+|  clk_100MHz_IBUF_BUFG | fir_instance_1/U0/i_synth/g_single_rate.i_single_rate/rfd_int                                         |                                                                     |                2 |             16 |
+|  clk_100MHz_IBUF_BUFG |                                                                                                       | reset_IBUF                                                          |                7 |             20 |
+|  clk_100MHz_IBUF_BUFG | DAC2/_countDutyCycle[0]_i_1__0_n_0                                                                    | reset_IBUF                                                          |                8 |             32 |
+|  clk_100MHz_IBUF_BUFG | DAC1/_countDutyCycle[0]_i_1_n_0                                                                       | reset_IBUF                                                          |                8 |             32 |
+|  clk_100MHz_IBUF_BUFG | fir_instance_0/U0/i_synth/g_single_rate.i_single_rate/we_flush                                        |                                                                     |                9 |             32 |
+|  clk_100MHz_IBUF_BUFG |                                                                                                       |                                                                     |               43 |            144 |
++-----------------------+-------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+
+
+

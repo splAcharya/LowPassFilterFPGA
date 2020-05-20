@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Apr 25 15:27:03 2019
+# Process ID: 4980
+# Current directory: E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/fir_compiler_1_synth_1
+# Command line: vivado.exe -log fir_compiler_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_compiler_1.tcl
+# Log file: E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/fir_compiler_1_synth_1/fir_compiler_1.vds
+# Journal file: E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/fir_compiler_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fir_compiler_1.tcl -notrace

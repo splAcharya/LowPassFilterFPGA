@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Apr 27 15:33:40 2019
+# Process ID: 14064
+# Current directory: D:/ECE_471_Project/blockDiag/stateMachineFirlet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9984 D:\ECE_471_Project\blockDiag\stateMachineFirlet\stateMachineFirlet.xpr
+# Log file: D:/ECE_471_Project/blockDiag/stateMachineFirlet/vivado.log
+# Journal file: D:/ECE_471_Project/blockDiag/stateMachineFirlet\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ECE_471_Project/blockDiag/stateMachineFirlet/stateMachineFirlet.xpr
+INFO: [Project 1-313] Project file moved from 'E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 850.801 ; gain = 142.816
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 27 16:56:24 2019...

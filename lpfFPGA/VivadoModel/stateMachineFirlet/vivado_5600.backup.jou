@@ -1,0 +1,165 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Apr 25 13:13:58 2019
+# Process ID: 5600
+# Current directory: E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2072 E:\ECE_471\Labs\nexysFIR\blockDiag\stateMachineFirlet\stateMachineFirlet.xpr
+# Log file: E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/vivado.log
+# Journal file: E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.xpr
+update_compile_order -fileset sources_1
+close [ open E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/new/_pwmOut.v w ]
+add_files E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/new/_pwmOut.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_ip -name fir_compiler -vendor xilinx.com -library ip -version 7.2 -module_name fir_compiler_1 -dir e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip
+set_property -dict [list CONFIG.CoefficientVector {0,0,0.012299,0,0,0,0.00097656,0.0056763,0.0070496,0.0032654,0,0,0,0,0.010406,0.017578,0.012909,0,0,0,0,0.015656,0.046661,0.053131,0.017181,0,0,0,0.73221,0,0,0,0.017181,0.053131,0.046661,0.015656,0,0,0,0,0.012909,0.017578,0.010406,0,0,0,0,0.0032654,0.0070496,0.0056763,0.00097656,0,0,0,0.012299,0,0} CONFIG.Sample_Frequency {0.1} CONFIG.Clock_Frequency {100} CONFIG.Coefficient_Fractional_Bits {15} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Unsigned} CONFIG.Quantization {Quantize_Only} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {16} CONFIG.Output_Rounding_Mode {Full_Precision} CONFIG.Output_Width {32} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate}] [get_ips fir_compiler_1]
+generate_target {instantiation_template} [get_files e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+catch { config_ip_cache -export [get_ips -all fir_compiler_1] }
+export_ip_user_files -of_objects [get_files e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+launch_runs  fir_compiler_1_synth_1
+export_simulation -of_objects [get_files e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -directory E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files/sim_scripts -ip_user_files_dir E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files -ipstatic_source_dir E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/modelsim} {questa=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/questa} {riviera=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/riviera} {activehdl=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+synth_design -rtl -name rtl_1
+refresh_design
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+set_property -dict [list CONFIG.Sample_Frequency {0.001} CONFIG.Clock_Frequency {100} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Structure {Inferred} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate}] [get_ips fir_compiler_1]
+generate_target all [get_files  e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+catch { config_ip_cache -export [get_ips -all fir_compiler_1] }
+export_ip_user_files -of_objects [get_files e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -no_script -sync -force -quiet
+reset_run fir_compiler_1_synth_1
+launch_runs  fir_compiler_1_synth_1
+export_simulation -of_objects [get_files e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -directory E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files/sim_scripts -ip_user_files_dir E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files -ipstatic_source_dir E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/modelsim} {questa=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/questa} {riviera=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/riviera} {activehdl=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+set_property -dict [list CONFIG.CoefficientVector {0,0,0,0,6.1035e-05,0.00012207,0.00012207,0,0,0,0,0,0.00045776,0.00076294,0.00064087,0,0,0,0,0,0.0016174,0.0026245,0.0021362,0,0,0,0,0,0.0044556,0.0070801,0.0056152,0,0,0,0,0,0.010864,0.017151,0.01358,0,0,0,0,0,0.029999,0.050415,0.043457,0,0,0,0,0.75,0,0,0,0,0.043457,0.050415,0.029999,0,0,0,0,0,0.01358,0.017151,0.010864,0,0,0,0,0,0.0056152,0.0070801,0.0044556,0,0,0,0,0,0.0021362,0.0026245,0.0016174,0,0,0,0,0,0.00064087,0.00076294,0.00045776,0,0,0,0,0,0.00012207,0.00012207,6.1035e-05,0,0,0,0} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Unsigned} CONFIG.Quantization {Quantize_Only} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {16} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {16} CONFIG.Output_Rounding_Mode {Full_Precision} CONFIG.Output_Width {33}] [get_ips fir_compiler_1]
+generate_target all [get_files  e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+catch { config_ip_cache -export [get_ips -all fir_compiler_1] }
+export_ip_user_files -of_objects [get_files e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -no_script -sync -force -quiet
+reset_run fir_compiler_1_synth_1
+launch_runs  fir_compiler_1_synth_1
+export_simulation -of_objects [get_files e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -directory E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files/sim_scripts -ip_user_files_dir E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files -ipstatic_source_dir E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/modelsim} {questa=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/questa} {riviera=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/riviera} {activehdl=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+refresh_design
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+set_property -dict [list CONFIG.Coefficient_Fractional_Bits {15} CONFIG.Coefficient_Structure {Non_Symmetric} CONFIG.Coefficient_Structure {Non_Symmetric} CONFIG.Data_Width {16} CONFIG.Output_Rounding_Mode {Full_Precision} CONFIG.Output_Width {32} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate}] [get_ips fir_compiler_1]
+generate_target all [get_files  e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+catch { config_ip_cache -export [get_ips -all fir_compiler_1] }
+export_ip_user_files -of_objects [get_files e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -no_script -sync -force -quiet
+reset_run fir_compiler_1_synth_1
+launch_runs  fir_compiler_1_synth_1
+export_simulation -of_objects [get_files e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -directory E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files/sim_scripts -ip_user_files_dir E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files -ipstatic_source_dir E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/modelsim} {questa=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/questa} {riviera=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/riviera} {activehdl=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.CoefficientVector {0,0,0,0,0,0,0.00024414,0.00039673,0.00030518,0,0,0,0.00027466,0,0,0,0,0,0.0019531,0.0023499,0.0010071,0,0.0013123,0.0040283,0.0044556,0,0,0,0,0,0.0034485,0,0,0,0.014099,0.026154,0.021698,0,0,0,0,0,0,0,0,0,0.086914,0.14798,0.11984,0,0,0.79996,0,0,0.11984,0.14798,0.086914,0,0,0,0,0,0,0,0,0,0.021698,0.026154,0.014099,0,0,0,0.0034485,0,0,0,0,0,0.0044556,0.0040283,0.0013123,0,0.0010071,0.0023499,0.0019531,0,0,0,0,0,0.00027466,0,0,0,0.00030518,0.00039673,0.00024414,0,0,0,0,0,0} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Unsigned} CONFIG.Quantization {Quantize_Only} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {16} CONFIG.Coefficient_Structure {Non_Symmetric} CONFIG.Data_Width {16} CONFIG.Output_Rounding_Mode {Full_Precision} CONFIG.Output_Width {33}] [get_ips fir_compiler_1]
+generate_target all [get_files  e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+catch { config_ip_cache -export [get_ips -all fir_compiler_1] }
+export_ip_user_files -of_objects [get_files e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -no_script -sync -force -quiet
+reset_run fir_compiler_1_synth_1
+launch_runs  fir_compiler_1_synth_1
+export_simulation -of_objects [get_files e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -directory E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files/sim_scripts -ip_user_files_dir E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files -ipstatic_source_dir E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/modelsim} {questa=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/questa} {riviera=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/riviera} {activehdl=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+set_property -dict [list CONFIG.CoefficientVector {6.1035e-05,9.1553e-05,9.1553e-05,9.1553e-05,6.1035e-05,6.1035e-05,6.1035e-05,3.0518e-05,3.0518e-05,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.0518e-05,3.0518e-05,3.0518e-05,3.0518e-05,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00012207,0.00027466,0.00039673,0.0005188,0.00061035,0.00067139,0.0007019,0.0007019,0.00064087,0.00057983,0.00048828,0.00039673,0.00030518,0.00018311,9.1553e-05,3.0518e-05,0,0,3.0518e-05,0.00012207,0.00027466,0.00045776,0.00064087,0.00088501,0.0011292,0.0013428,0.0015259,0.0016785,0.00177,0.0018005,0.0017395,0.0015869,0.0013733,0.0010376,0.00067139,0.00024414,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.0518e-05,3.0518e-05,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00015259,0.0014343,0.0027466,0.0040588,0.0052795,0.0063782,0.0072937,0.0079346,0.0083313,0.0083923,0.0081482,0.0075989,0.0068054,0.0057983,0.0046387,0.0033875,0.0021667,0.0010071,3.0518e-05,0,0,0,0,0,0.00048828,0.0016174,0.0028992,0.0042725,0.0055542,0.0066833,0.0074768,0.0078735,0.0077209,0.0069885,0.0055542,0.003479,0.0007019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0046997,0.012756,0.02066,0.028137,0.034882,0.040619,0.045135,0.048248,0.049835,0.049835,0.048248,0.045135,0.040619,0.034882,0.028137,0.02066,0.012756,0.0046997,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0007019,0.003479,0.0055542,0.0069885,0.0077209,0.0078735,0.0074768,0.0066833,0.0055542,0.0042725,0.0028992,0.0016174,0.00048828,0,0,0,0,0,3.0518e-05,0.0010071,0.0021667,0.0033875,0.0046387,0.0057983,0.0068054,0.0075989,0.0081482,0.0083923,0.0083313,0.0079346,0.0072937,0.0063782,0.0052795,0.0040588,0.0027466,0.0014343,0.00015259,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.0518e-05,3.0518e-05,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.00024414,0.00067139,0.0010376,0.0013733,0.0015869,0.0017395,0.0018005,0.00177,0.0016785,0.0015259,0.0013428,0.0011292,0.00088501,0.00064087,0.00045776,0.00027466,0.00012207,3.0518e-05,0,0,3.0518e-05,9.1553e-05,0.00018311,0.00030518,0.00039673,0.00048828,0.00057983,0.00064087,0.0007019,0.0007019,0.00067139,0.00061035,0.0005188,0.00039673,0.00027466,0.00012207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.0518e-05,3.0518e-05,3.0518e-05,3.0518e-05,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.0518e-05,3.0518e-05,6.1035e-05,6.1035e-05,6.1035e-05,9.1553e-05,9.1553e-05,9.1553e-05,6.1035e-05} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Unsigned} CONFIG.Quantization {Quantize_Only} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {20} CONFIG.Coefficient_Structure {Non_Symmetric} CONFIG.Data_Width {16} CONFIG.Output_Rounding_Mode {Full_Precision} CONFIG.Output_Width {36}] [get_ips fir_compiler_1]
+generate_target all [get_files  e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci]
+catch { config_ip_cache -export [get_ips -all fir_compiler_1] }
+export_ip_user_files -of_objects [get_files e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -no_script -sync -force -quiet
+reset_run fir_compiler_1_synth_1
+launch_runs  fir_compiler_1_synth_1
+export_simulation -of_objects [get_files e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci] -directory E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files/sim_scripts -ip_user_files_dir E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files -ipstatic_source_dir E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/modelsim} {questa=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/questa} {riviera=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/riviera} {activehdl=E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

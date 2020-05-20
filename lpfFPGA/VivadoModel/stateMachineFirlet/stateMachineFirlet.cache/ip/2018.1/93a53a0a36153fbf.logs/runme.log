@@ -1,0 +1,490 @@
+
+*** Running vivado
+    with args -log fir_compiler_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_compiler_0.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source fir_compiler_0.tcl -notrace
+Command: synth_design -top fir_compiler_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8424 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 413.258 ; gain = 99.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_0/synth/fir_compiler_0.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: fir_compiler_0 - type: string 
+	Parameter C_COEF_FILE bound to: fir_compiler_0.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 5022 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 0 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 1 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 0 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 5020 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 0 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 6 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_COEF_WIDTH bound to: 16 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 1 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 1 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 32 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 32 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 32 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: none - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 6 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 837 - type: integer 
+	Parameter C_INPUT_RATE bound to: 1000 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 1000 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 0 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 850 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 1 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_11' declared at 'e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_0/hdl/fir_compiler_v7_2_vh_rfs.vhd:61141' bound to instance 'U0' of component 'fir_compiler_v7_2_11' [e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_0/synth/fir_compiler_0.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'fir_compiler_0' (14#1) [e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_0/synth/fir_compiler_0.vhd:70]
+WARNING: [Synth 8-3331] design delay__parameterized7 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized7 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized7 has unconnected port CLK
+WARNING: [Synth 8-3331] design cntrl_delay__parameterized0 has unconnected port CE
+WARNING: [Synth 8-3331] design cntrl_delay__parameterized0 has unconnected port SCLR
+WARNING: [Synth 8-3331] design cntrl_delay__parameterized0 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized6 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized6 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized6 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized6 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized6 has unconnected port CLK
+WARNING: [Synth 8-3331] design buff has unconnected port RE
+WARNING: [Synth 8-3331] design buff has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized13 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized13 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized12 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized12 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized12 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized12 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized12 has unconnected port CLK
+WARNING: [Synth 8-3331] design calc__parameterized0 has unconnected port PRE_ADDSUB
+WARNING: [Synth 8-3331] design calc__parameterized0 has unconnected port PRE_ADD_BYPASS
+WARNING: [Synth 8-3331] design calc__parameterized0 has unconnected port CED
+WARNING: [Synth 8-3331] design delay__parameterized11 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized11 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized11 has unconnected port CLK
+WARNING: [Synth 8-3331] design add_accum has unconnected port POUT[casc][52]
+WARNING: [Synth 8-3331] design add_accum has unconnected port POUT[casc][51]
+WARNING: [Synth 8-3331] design add_accum has unconnected port POUT[casc][50]
+WARNING: [Synth 8-3331] design add_accum has unconnected port POUT[casc][49]
+WARNING: [Synth 8-3331] design add_accum has unconnected port POUT[casc][48]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][47]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][46]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][45]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][44]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][43]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][42]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][41]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][40]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][39]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][38]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][37]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][36]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][35]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][34]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][33]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][32]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][31]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][30]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][29]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][28]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][27]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][26]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][25]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][24]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][23]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][22]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][21]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][20]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][19]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][18]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][17]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][16]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][15]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][14]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][13]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][12]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][11]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][10]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][9]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][8]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][7]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][6]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][5]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][4]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][3]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][2]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][1]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[fab][0]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[casc][52]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[casc][51]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[casc][50]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[casc][49]
+WARNING: [Synth 8-3331] design add_accum has unconnected port PIN[casc][48]
+WARNING: [Synth 8-3331] design delay__parameterized10 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized10 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized10 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized10 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized10 has unconnected port CLK
+WARNING: [Synth 8-3331] design calc has unconnected port PRE_ADDSUB
+WARNING: [Synth 8-3331] design calc has unconnected port PRE_ADD_BYPASS
+WARNING: [Synth 8-3331] design calc has unconnected port CED
+WARNING: [Synth 8-3331] design delay__parameterized9 has unconnected port WE
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 561.504 ; gain = 247.270
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 561.504 ; gain = 247.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 561.504 ; gain = 247.270
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.srcs/sources_1/ip/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0'
+Parsing XDC File [E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/fir_compiler_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/fir_compiler_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 774.875 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 774.875 ; gain = 460.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 774.875 ; gain = 460.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/fir_compiler_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 774.875 ; gain = 460.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5547] Trying to map ROM "rom" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "rom" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "rom" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "rom" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "rom" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 774.875 ; gain = 460.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[4].i_delay' (delay__parameterized4) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[5].i_delay'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[1].i_coln_cntrl_and_addr' (cntrl_delay__parameterized0) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[1].g_coln_cntrl_and_addr[1].i_coln_cntrl_and_addr'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[1].g_coln_cntrl_and_addr[2].i_coln_cntrl_and_addr' (cntrl_delay__parameterized0) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[2].g_coln_cntrl_and_addr[2].i_coln_cntrl_and_addr'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[2].g_coln_cntrl_and_addr[3].i_coln_cntrl_and_addr' (cntrl_delay__parameterized0) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[3].g_coln_cntrl_and_addr[3].i_coln_cntrl_and_addr'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[3].g_coln_cntrl_and_addr[4].i_coln_cntrl_and_addr' (cntrl_delay__parameterized0) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[4].g_coln_cntrl_and_addr[4].i_coln_cntrl_and_addr'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[4].g_coln_cntrl_and_addr[5].i_coln_cntrl_and_addr' (cntrl_delay__parameterized0) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[5].g_coln_cntrl_and_addr[5].i_coln_cntrl_and_addr'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "g_single_rate.i_single_rate/add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.flush_data_reg) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[4].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[4].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[2].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[2].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[1].cntrl_reg[1][2]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[1].cntrl_reg[1][4]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[1].cntrl_reg[1][5]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[2].cntrl_reg[2][2]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[2].cntrl_reg[2][4]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[2].cntrl_reg[2][5]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[3].cntrl_reg[3][2]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[3].cntrl_reg[3][4]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[3].cntrl_reg[3][5]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[4].cntrl_reg[4][2]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[4].cntrl_reg[4][4]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[4].cntrl_reg[4][5]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[5].cntrl_reg[5][2]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[5].cntrl_reg[5][4]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl[5].cntrl_reg[5][5]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[3]' (FDR) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[5]' (FDR) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[6]' (FDR) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[8]' (FDR) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[9]' (FDR) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[0]' (FDR) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[1]' (FDR) to 'U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tlast_int_reg )
+INFO: [Synth 8-3332] Sequential element (rd_avail_2_reg) is unused and will be removed from module glb_srl_fifo.
+INFO: [Synth 8-3332] Sequential element (rd_valid_2_reg) is unused and will be removed from module glb_srl_fifo.
+INFO: [Synth 8-3332] Sequential element (full_1_reg) is unused and will be removed from module glb_srl_fifo.
+INFO: [Synth 8-3332] Sequential element (not_full_1_reg) is unused and will be removed from module glb_srl_fifo.
+INFO: [Synth 8-3332] Sequential element (afull_1_reg) is unused and will be removed from module glb_srl_fifo.
+INFO: [Synth 8-3332] Sequential element (aempty_1_reg) is unused and will be removed from module glb_srl_fifo.
+INFO: [Synth 8-3332] Sequential element (not_aempty_1_reg) is unused and will be removed from module glb_srl_fifo.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tlast_int_reg) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+INFO: [Synth 8-3332] Sequential element (g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[2]) is unused and will be removed from module fir_compiler_v7_2_11_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:55 . Memory (MB): peak = 774.875 ; gain = 460.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b/i_0/gen_bram.gen_rom.gen_double_reg.do_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.g_mem_b.i_mem_b/i_0/gen_bram.gen_rom.gen_double_reg.do_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[2].i_mem/g_individual.g_mem_b.i_mem_b/i_0/gen_bram.gen_rom.gen_double_reg.do_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[3].i_mem/g_individual.g_mem_b.i_mem_b/i_0/gen_bram.gen_rom.gen_double_reg.do_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[4].i_mem/g_individual.g_mem_b.i_mem_b/i_0/gen_bram.gen_rom.gen_double_reg.do_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[5].i_mem/g_individual.g_mem_b.i_mem_b/i_0/gen_bram.gen_rom.gen_double_reg.do_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:01:09 . Memory (MB): peak = 865.613 ; gain = 551.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:09 . Memory (MB): peak = 867.430 ; gain = 553.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:01:09 . Memory (MB): peak = 877.648 ; gain = 563.414
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:01:11 . Memory (MB): peak = 877.648 ; gain = 563.414
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:01:11 . Memory (MB): peak = 877.648 ; gain = 563.414
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 877.648 ; gain = 563.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 877.648 ; gain = 563.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 877.648 ; gain = 563.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 877.648 ; gain = 563.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |     3|
+|2     |DSP48E1    |     6|
+|3     |DSP48E1_1  |     1|
+|4     |LUT1       |     4|
+|5     |LUT2       |    13|
+|6     |LUT3       |     7|
+|7     |LUT4       |     7|
+|8     |LUT5       |     4|
+|9     |LUT6       |     8|
+|10    |RAMB18E1_5 |     8|
+|11    |RAMB18E1_6 |     1|
+|12    |RAMB18E1_7 |     1|
+|13    |RAMB18E1_8 |     1|
+|14    |RAMB18E1_9 |     1|
+|15    |SRL16E     |    19|
+|16    |FDRE       |   235|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 877.648 ; gain = 563.414
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 110 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:01:00 . Memory (MB): peak = 877.648 ; gain = 350.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 877.648 ; gain = 563.414
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:14 . Memory (MB): peak = 886.926 ; gain = 584.531
+INFO: [Common 17-1381] The checkpoint 'E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp' has been generated.

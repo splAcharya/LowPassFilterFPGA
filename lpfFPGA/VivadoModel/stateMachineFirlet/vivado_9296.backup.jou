@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Apr 25 19:37:58 2019
+# Process ID: 9296
+# Current directory: E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4540 E:\ECE_471\Labs\nexysFIR\blockDiag\stateMachineFirlet\stateMachineFirlet.xpr
+# Log file: E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/vivado.log
+# Journal file: E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/ECE_471/Labs/nexysFIR/blockDiag/stateMachineFirlet/stateMachineFirlet.runs/impl_1/_main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

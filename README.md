@@ -1,5 +1,5 @@
 # LowPassFilterFPGA
-Designed and Implemented a low pass filter in Nexys 4 FPGA board. 
+Designed and Implemented a low pass filter in Nexys 4 Artix-7 FPGA board. 
 Filter designed in Matlab FDA tools.
 
 FPGA IDE: Xilinx Vivado
